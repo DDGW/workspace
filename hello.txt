@@ -1,0 +1,9 @@
+hello git
+hello git master test
+hello git hot-fix test
+hello git
+hello branch hot--fix
+github update
+workspace2 update
+SHS methods
+nice
