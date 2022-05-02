@@ -1,3 +1,9 @@
+### gitignore文件
+
+```
+意思就是上传的时候忽略这个文件夹以及里面的内容
+```
+
 ### 基础Linux命令
 
 ```
@@ -22,9 +28,19 @@
 11. mkdir 文件夹名  添加文件夹
 ```
 
+### 	Git基本命令
 
-
-![image-20220502112600827](C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20220502112600827.png)
+```
+1. git config --global user.name 用户名	设置用户签名
+2. git config --global user.email 邮箱	 设置用户签名
+3. git init			                      初始化本地库
+4. git status		                      查看本地库状态
+5. git add 文件名		                    添加到暂存区
+6. git rm --cached 文件名                  从暂存区删除
+7. git commit -m "日志信息" 文件名           提交到本地库
+8. git reflog                             查看历史信息
+9. git reset --hard 版本号                 版本穿梭
+```
 
 ### 设置用户签名
 
@@ -116,7 +132,13 @@ git merge 分支名      把指定的分支指定到当前分支上
 
 ### Git Hub操作
 
-![image-20220502120758179](C:\Users\asus\AppData\Roaming\Typora\typora-user-images\image-20220502120758179.png)
+```
+1. git remote -v                      查看当前所有远程地址别名
+2. git remote add 别名 远程地址         起别名
+3. git push 别名 分支                  推送本地分支上的内容到远程仓库
+4. git clone 远程地址                  将远程仓库的内容克隆到本地
+5. git pull 远程库地址/别名 远程分支名    将远程仓库对于分支最新内容拉下来后与当前本地库分支直接合并           
+```
 
 ```
 clone不需要登录账号 
