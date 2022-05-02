@@ -19,6 +19,7 @@
    set nu 设置行号
    yy是复制 p是粘贴(退出编辑状态)
 10. ctrl+insert 复制 shift+insert粘贴
+11. mkdir 文件夹名  添加文件夹
 ```
 
 
@@ -139,6 +140,27 @@ git init
 git add .
 git commit -m “你的提交信息”
 git push 远程库地址名 远程分支名
+```
+
+### 修改并push某个文件夹下的文件
+
+```
+mkdir updatafile 创建文件夹
+cd 文件名(当前路径下)
+cd ./文件夹名/文件名(当前兄弟文件夹下文件)
+
+git add ./文件夹名/文件名
+git commit -m "你的提交信息"
+git push xxx xxx
+(可以单独修改某一文件，只需要add路径正确)
+```
+
+### VSCode
+
+```
+问题：failed unable to access ‘***.git/‘:OpenSSL SSL_read: Connection was reset, errno 10054
+
+解决：终端输入 git config --global http.sslVerify "false"
 ```
 
 
