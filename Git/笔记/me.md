@@ -155,6 +155,14 @@ git push xxx xxx
 (可以单独修改某一文件，只需要add路径正确)
 ```
 
+### 直接修改文件夹下的全部文件
+
+```
+git add ./文件夹名
+git commit -m "你的提交信息"
+git push xxx xxx
+```
+
 ### VSCode
 
 ```
